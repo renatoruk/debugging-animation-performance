@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="js-btn navigation-toggle">+</button>
+<nav class="js-nav navigation">
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>careers</li>
+        <li>contact</li>
+    </ul>
+</nav>
+<main class="main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eius, eligendi. A aliquid facere fuga harum
+        odio praesentium quas recusandae temporibus totam vel. Aut dignissimos dolore ipsum itaque iure laboriosam
+        laborum pariatur perferendis quaerat sapiente, sunt veritatis. Cupiditate dicta dignissimos earum illo quaerat
+        sunt voluptate. Debitis et necessitatibus pariatur vitae! </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eius, eligendi. A aliquid facere fuga harum
+        odio praesentium quas recusandae temporibus totam vel. Aut dignissimos dolore ipsum itaque iure laboriosam
+        laborum pariatur perferendis quaerat sapiente, sunt veritatis. Cupiditate dicta dignissimos earum illo quaerat
+        sunt voluptate. Debitis et necessitatibus pariatur vitae! </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eius, eligendi. A aliquid facere fuga harum
+        odio praesentium quas recusandae temporibus totam vel. Aut dignissimos dolore ipsum itaque iure laboriosam
+        laborum pariatur perferendis quaerat sapiente, sunt veritatis. Cupiditate dicta dignissimos earum illo quaerat
+        sunt voluptate. Debitis et necessitatibus pariatur vitae! </p>
+</main>
+
+<script>
+
+    const btn = document.querySelector('.js-btn');
+    const nav = document.querySelector('.js-nav');
+
+    btn.addEventListener('click', () => {
+        if (nav.classList.contains('is-opened')) {
+            nav.classList.remove('is-opened');
+            return;
+        }
+
+        nav.classList.add('is-opened');
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background: cadetblue;
+
+    transform: translateX(200px);
+    transition: 2s;
+}
+
+.navigation.is-opened {
+    transform: translateX(0);
+}
+
+.navigation-toggle {
+    position: absolute;
+    background: blue;
+    color: white;
+    padding: 20px;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
