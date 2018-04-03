@@ -21,7 +21,7 @@ body {
 
 .navigation-toggle {
     position: absolute;
-    right: 0;
+    left: 0;
     background: blue;
     color: white;
     padding: 20px;
