@@ -28,7 +28,6 @@ body {
     -webkit-appearance: none;
     outline: none;
     border: none;
-    z-index: 1;
 }
 
 h1 {
